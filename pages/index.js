@@ -96,6 +96,47 @@ export default function Home() {
               <p className="leading-snug opacity-50">B.S. Mathematics Teaching <span className="mx-1">•</span> 2014 – 2018</p>
             </div>
           </section>
+
+
+
+          {/* Skills */}
+          <section className="grid gap-6 mt-12">
+            <h1 className="text-5xl uppercase font-oswald">Skills</h1>
+            <div className="flex flex-wrap gap-1">
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Creative Problem-solving</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Communication, Interpersonal</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Leadership</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Time Management</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">HTML5</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">CSS/SASS</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Javascript, ES6</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Docker</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Gulp</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Bash</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Node.js</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Alpine.js</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">jQuery</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">tailwindcss</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Responsive Design</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Git, GitHub</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">ExpressionEngine</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Cross-browser Compatibility</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Deployment, Hosting</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">React</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">nginx</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Linux</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">User Experience (UX)</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Adobe Photoshop</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Adobe Animate</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Adobe Illustrator</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Eblast Production</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Banner Ad Production</div>
+              <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Browsersync</div>
+            </div>
+          </section>
+
+
+
         </div>
       </main>
 
