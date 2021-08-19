@@ -26,7 +26,8 @@ export default function Home() {
           2.5 years of industry experience building scalable front end web content.
           Builds with modern technologies like
             <a href="https://tailwindcss.com" className="ml-1 text-blue-500 hover:underline">tailwindcss</a>,
-            <a href="https://alpinejs.dev" className="ml-1 text-blue-500 hover:underline">Alpine.js</a> and Docker.
+            <a href="https://alpinejs.dev" className="ml-1 text-blue-500 hover:underline">Alpine.js</a> and
+            <a href="https://www.docker.com/" className="ml-1 text-blue-500 hover:underline">Docker</a>.
           <i className="ml-1 opacity-70">You'll like me better when I'm caffeinated.</i> ☕
         </p>
 
