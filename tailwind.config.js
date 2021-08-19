@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'sans': ['Space Grotesk', 'sans-serif'],
         'oswald': ['Oswald', 'sans-serif']
       }
     },
@@ -12,5 +13,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [], 
+  plugins: [],
 }

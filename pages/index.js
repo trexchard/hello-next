@@ -2,26 +2,25 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen font-oswald dark:bg-gray-900 dark:text-white">
+    <body className="flex flex-col min-h-screen text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
       <Head>
         <title>Caleb Runion</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet"/>
       </Head>
 
-      <header className="sticky top-0 w-full p-6 text-center rounded-b-lg shadow-md dark:bg-gray-700/50 backdrop-blur-xl">
-        <h1 className="text-5xl uppercase">Caleb Runion</h1>
-        <h2 className="font-mono text-lg opacity-80">frontend web developer</h2>
+      <header className="sticky top-0 z-50 flex justify-center w-full p-6 rounded-b-lg shadow-md bg-white/80 dark:bg-gray-700/80 backdrop-blur-xl">
+        <div class="inline-grid grid-cols-[auto,1fr] gap-x-4">
+          <img src="/profile.jpg" className="self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md" />
+          <h1 className="text-4xl uppercase font-oswald">Caleb Runion</h1>
+          <h2 className="font-mono leading-tight opacity-80">front end web&nbsp;developer</h2>
+        </div>
       </header>
 
-      <main className="flex flex-col items-start justify-center flex-1 w-full px-20 text-center">
-        the beginning
-        <img src="http://fpoimg.com/500x1000?text=Preview" className="w-full" />
-        the end
+      <main className="flex-1 w-full max-w-5xl p-6 mx-auto font-sans md:p-12">
       </main>
 
-    </div>
+    </body>
   )
 }
