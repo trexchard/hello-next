@@ -10,7 +10,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet"/>
       </Head>
 
-      <header className="sticky top-0 z-50 flex justify-center w-full p-6 bg-white rounded-b-lg shadow-md dark:bg-gray-700">
+      <header className="sticky top-0 z-50 flex justify-center p-6 bg-white rounded-b-lg shadow-md dark:bg-gray-700">
         <div class="inline-grid grid-cols-[auto,1fr] gap-x-4">
           <img src="/profile.jpg" className="self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md" />
           <h1 className="text-4xl uppercase font-oswald">Caleb Runion</h1>
@@ -34,7 +34,7 @@ export default function Home() {
 
           <section className="mt-4 md:grid md:grid-cols-2 lg:grid-flow-col">
             {/* Location */}
-            <a href="https://www.google.com/maps/place/Greenville,+SC/@34.8331484,-82.4328706,12z/data=!3m1!4b1!4m5!3m4!1s0x88578f6662fa1105:0xd8aa9d77bf257696!8m2!3d34.8526176!4d-82.3940104?hl=en" target="_blank"
+            <a href="https://www.google.com/maps/place/Greenville,+SC/@34.8177151,-82.348231,11z/data=!4m5!3m4!1s0x88578f6662fa1105:0xd8aa9d77bf257696!8m2!3d34.8526176!4d-82.3940104?hl=en" target="_blank"
               className="grid grid-cols-[auto,1fr] self-start gap-x-4 rounded-md hover:text-black dark:hover:text-white hover:bg-gray-400/20 p-4 transition group">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" className="relative self-center w-10 h-10 row-span-2 transition fill-current group-hover:scale-125">
                 <path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"/>
