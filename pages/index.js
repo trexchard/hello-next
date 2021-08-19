@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <body className="flex flex-col min-h-screen text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
+    <body className="flex flex-col min-h-screen text-gray-900 bg-white dark:text-gray-200 dark:bg-gray-700">
       <Head>
         <title>Caleb Runion</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,7 +10,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet"/>
       </Head>
 
-      <header className="sticky top-0 z-50 flex justify-center w-full p-6 rounded-b-lg shadow-md bg-white/80 dark:bg-gray-700/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 flex justify-center w-full p-6 bg-white rounded-b-lg shadow-md dark:bg-gray-700">
         <div class="inline-grid grid-cols-[auto,1fr] gap-x-4">
           <img src="/profile.jpg" className="self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md" />
           <h1 className="text-4xl uppercase font-oswald">Caleb Runion</h1>
@@ -18,7 +18,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-1 w-full max-w-5xl p-6 mx-auto font-sans md:p-12">
+      <main className="flex-1 w-full p-6 font-sans bg-gray-100 dark:bg-gray-900 md:p-12">
+        <div className="max-w-5xl pb-16 mx-auto">
 
         {/* Intro */}
         <p className="">
