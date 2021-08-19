@@ -26,12 +26,13 @@ export default function Home() {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
       </Head>
 
-      <header className="sticky top-0 z-50 flex justify-center p-6 bg-white rounded-b-lg shadow-md dark:bg-gray-700">
-        <div class="inline-grid grid-cols-[auto,1fr] gap-x-4">
+      <header className="sticky top-0 z-50 flex justify-center p-6 rounded-b-lg shadow-md bg-white/70 dark:bg-gray-700/70 backdrop-blur-md">
+
+        <a href="#" class="inline-grid grid-cols-[auto,1fr] gap-x-4">
           <img src="/profile.jpg" className="self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md" />
           <h1 className="text-4xl uppercase font-oswald">Caleb Runion</h1>
           <h2 className="font-mono leading-tight opacity-80">front end web&nbsp;developer</h2>
-        </div>
+        </a>
       </header>
 
       <main className="flex-1 w-full p-6 font-sans bg-gray-100 dark:bg-gray-900 md:p-12">
