@@ -35,7 +35,7 @@ export default function Home() {
         </a>
       </header>
 
-      <main className="flex-1 w-full p-6 font-sans bg-gray-100 dark:bg-gray-900 md:p-12">
+      <main className="flex-1 w-full px-6 pt-8 pb-16 font-sans bg-gray-100 dark:bg-gray-900 md:p-12 md:pb-16">
         <div className="max-w-5xl mx-auto">
 
           {/* Intro */}
