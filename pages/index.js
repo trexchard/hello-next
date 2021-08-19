@@ -20,6 +20,15 @@ export default function Home() {
 
       <main className="flex-1 w-full max-w-5xl p-6 mx-auto font-sans md:p-12">
 
+        {/* Intro */}
+        <p className="">
+          Detail-oriented software engineer, but mostly a creative problem-solver that's fast-paced and eager to learn.
+          2.5 years of industry experience building scalable front end web content.
+          Builds with modern technologies like
+            <a href="https://tailwindcss.com" className="ml-1 text-blue-500 hover:underline">tailwindcss</a>,
+            <a href="https://alpinejs.dev" className="ml-1 text-blue-500 hover:underline">Alpine.js</a> and Docker.
+          <i className="ml-1 opacity-70">You'll like me better when I'm caffeinated.</i> ☕
+        </p>
 
         {/* Location */}
         <a href="https://www.google.com/maps/place/Greenville,+SC/@34.8331484,-82.4328706,12z/data=!3m1!4b1!4m5!3m4!1s0x88578f6662fa1105:0xd8aa9d77bf257696!8m2!3d34.8526176!4d-82.3940104?hl=en" target="_blank"
