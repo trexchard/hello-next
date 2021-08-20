@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
       </Head>
 
-      <header className="sticky top-0 z-50 flex justify-center p-6 rounded-b-lg shadow-md bg-white/70 dark:bg-gray-700/70 backdrop-blur-md">
+      <header className="sticky top-0 z-50 flex justify-center p-6 shadow-md rounded-b-xl bg-white/70 dark:bg-gray-700/70 backdrop-blur-md">
 
         <a href="#" class="inline-grid grid-cols-[auto,1fr] gap-x-4">
           <img src="/profile.jpg" className="self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md" />
@@ -167,7 +167,7 @@ export default function Home() {
       </main>
 
 
-      <footer className="flex items-center justify-between px-4 bg-white md:px-12 dark:bg-gray-700">
+      <footer className="flex items-center justify-between px-3 bg-white md:px-9 dark:bg-gray-700">
 
           <a href="https://www.linkedin.com/in/calebrunion/" className="p-4 transition hover:text-blue-500">
             <svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" className="fill-current">
