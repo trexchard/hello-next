@@ -46,7 +46,7 @@ export default function Home() {
               <a href="https://tailwindcss.com" className="ml-1 text-blue-500 hover:underline">tailwindcss</a>,
               <a href="https://alpinejs.dev" className="ml-1 text-blue-500 hover:underline">Alpine.js</a> and
               <a href="https://www.docker.com/" className="ml-1 text-blue-500 hover:underline">Docker</a>.
-            <i className="ml-1 opacity-70">You'll like me better when I'm caffeinated.</i> ☕
+            <i className="ml-1 opacity-70">You'll&nbsp;like me better when I'm caffeinated.</i> ☕
           </p>
 
           <section className="mt-4 md:grid md:grid-cols-2 lg:grid-flow-col">
@@ -86,9 +86,9 @@ export default function Home() {
 
           {/* Experience */}
           <section className="grid gap-6 mt-12">
-            <h1 className="text-5xl uppercase font-oswald">Experience</h1>
+            <h1 className="text-5xl uppercase font-oswald print:text-3xl">Experience</h1>
             <div>
-              <a href="https://jacksonmg.com" target="_blank" className="inline-flex items-center gap-2 text-2xl transition hover:text-blue-500">
+              <a href="https://jacksonmg.com" target="_blank" className="inline-flex items-center gap-2 text-2xl transition hover:text-blue-500 print:text-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" className="fill-current rotate-[-45deg] print:hidden">
                   <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"/>
                 </svg>
@@ -102,9 +102,9 @@ export default function Home() {
 
           {/* Education */}
           <section className="grid gap-6 mt-12">
-            <h1 className="text-5xl uppercase font-oswald">Education</h1>
+            <h1 className="text-5xl uppercase font-oswald print:text-3xl">Education</h1>
             <div>
-              <a href="https://www.clemson.edu" target="_blank" className="inline-flex items-center gap-2 text-2xl transition hover:text-blue-500">
+              <a href="https://www.clemson.edu" target="_blank" className="inline-flex items-center gap-2 text-2xl transition hover:text-blue-500 print:text-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" className="fill-current rotate-[-45deg] print:hidden">
                   <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"/>
                 </svg>
@@ -118,8 +118,8 @@ export default function Home() {
 
           {/* Skills */}
           <section className="grid gap-6 mt-12">
-            <h1 className="text-5xl uppercase font-oswald">Skills</h1>
-            <div id="skills" className="flex flex-wrap items-center gap-1">
+            <h1 className="text-5xl uppercase font-oswald print:text-3xl">Skills</h1>
+            <div id="skills" className="flex flex-wrap items-center gap-1 print:text-xs">
               <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Creative Problem-solving</div>
               <span className="hidden print:p-1 print:inline-block">•</span>
               <div className="px-3 py-2 font-mono rounded-md bg-gray-400/20">Communication</div>
@@ -206,7 +206,7 @@ export default function Home() {
       </main>
 
 
-      <footer className="flex items-center justify-between px-3 bg-white md:px-9 dark:bg-gray-700">
+      <footer className="flex items-center justify-between px-3 bg-white md:px-9 dark:bg-gray-700 print:hidden">
 
           <a href="https://www.linkedin.com/in/calebrunion/" className="p-4 transition hover:text-blue-500">
             <svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" className="fill-current">

@@ -7,11 +7,10 @@ module.exports = {
       fontFamily: {
         'sans': ['Space Grotesk', 'sans-serif'],
         'oswald': ['Oswald', 'sans-serif']
+      },
+      screens: {
+        'print': {'raw': 'print'},
       }
-    },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    }
+  }
 }
