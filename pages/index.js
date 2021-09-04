@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className=''>
+    <>
       {/* Intro */}
       <p className=''>
         Detail-oriented software engineer, but mostly a creative problem-solver
@@ -317,6 +317,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }
