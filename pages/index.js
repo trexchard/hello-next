@@ -2,6 +2,43 @@ import Head from 'next/head'
 import ContactLink from '../components/ContactLink'
 import Entry from '../components/Entry'
 
+const skills = [
+  'HTML5',
+  'CSS',
+  'tailwindcss',
+  'SCSS',
+  'ES6 Javascript',
+  'Alpine.js',
+  'Node.js',
+  'Docker',
+  'Gulp',
+  'Eblast Production',
+  'Bash',
+  'jQuery',
+  'Responsive Design',
+  'ExpressionEngine',
+  'Laravel',
+  'TALL Stack',
+  'PHP',
+  'Python',
+  'Git',
+  'GitHub',
+  'Netlify',
+  'Deployment',
+  'Hosting',
+  'NEXT.js',
+  'React',
+  'Cross-browser Compatibility',
+  'UX Design',
+  'Adobe Photoshop',
+  'Adobe Illustrator',
+  'nginx',
+  'Linux',
+  'Adobe Animate',
+  'Banner Ad Production',
+  'Browsersync',
+]
+
 export default function Home() {
   return (
     <>
@@ -66,7 +103,7 @@ export default function Home() {
           organization='Jackson Marketing'
           title='Frontend Web Developer'
           duration='March 2019 – Current'
-            href='https://jacksonmg.com'
+          href='https://jacksonmg.com'
         />
       </section>
 
@@ -79,7 +116,7 @@ export default function Home() {
           organization='Clemson University'
           title='B.S. Mathematics Teaching'
           duration='2014 – 2018'
-            href='https://www.clemson.edu'
+          href='https://www.clemson.edu'
         />
       </section>
 
@@ -88,165 +125,13 @@ export default function Home() {
         <h1 className='text-5xl uppercase font-oswald print:text-3xl'>
           Skills
         </h1>
-        <div
-          id='skills'
-          className='flex flex-wrap items-center gap-1 print:text-xs'
-        >
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Creative Problem-solving
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Communication
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Interpersonal
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Leadership
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Time Management
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            HTML5
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            CSS
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            tailwindcss
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            SCSS
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            ES6 Javascript
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Alpine.js
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Node.js
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Docker
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Gulp
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Eblast Production
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Bash
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            jQuery
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Responsive Design
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            ExpressionEngine
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Laravel
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            TALL Stack
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            PHP
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Python
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Git
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            GitHub
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Netlify
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Deployment
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Hosting
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            NEXT.js
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            React
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Cross-browser Compatibility
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            UX Design
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Adobe Photoshop
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Adobe Illustrator
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            nginx
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Linux
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Adobe Animate
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Banner Ad Production
-          </div>
-          <span className='hidden print:p-1 print:inline-block'>•</span>
-          <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
-            Browsersync
-          </div>
+
+        <div className='flex flex-wrap items-center gap-1 print:text-xs'>
+          {skills.map((skill) => (
+            <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
+              {skill}
+            </div>
+          ))}
         </div>
       </section>
     </>
