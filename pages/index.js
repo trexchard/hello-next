@@ -1,6 +1,12 @@
+import Head from 'next/head'
+
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home - Caleb Runion</title>
+      </Head>
+
       {/* Intro */}
       <p>
         Detail-oriented software engineer, but mostly a creative problem-solver
