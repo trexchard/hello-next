@@ -42,6 +42,7 @@ export default function Home() {
         ☕
       </p>
 
+      {/* Contact Info */}
       <section className='flex flex-wrap justify-around mt-4'>
         <ContactLink content='864.386.3546' label='tel' href='tel:8643863546' />
         <ContactLink
