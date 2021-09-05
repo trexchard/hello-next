@@ -12,13 +12,12 @@ const skills = [
   'Node.js',
   'Docker',
   'Gulp',
-  'Eblast Production',
   'Bash',
+  'Eblast Production',
   'jQuery',
   'Responsive Design',
   'ExpressionEngine',
   'Laravel',
-  'TALL Stack',
   'PHP',
   'Python',
   'Git',
@@ -36,7 +35,6 @@ const skills = [
   'Linux',
   'Adobe Animate',
   'Banner Ad Production',
-  'Browsersync',
 ]
 
 export default function Home() {
