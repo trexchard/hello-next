@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       {/* Intro */}
-      <p className=''>
+      <p>
         Detail-oriented software engineer, but mostly a creative problem-solver
         that's fast-paced and eager to learn. 2.5 years of industry experience
         building scalable front end web content. Builds with modern technologies
