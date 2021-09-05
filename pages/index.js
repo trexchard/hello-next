@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import ContactLink from '../components/ContactLink'
+import Entry from '../components/Entry'
 
 export default function Home() {
   return (
@@ -60,28 +61,12 @@ export default function Home() {
         <h1 className='text-5xl uppercase font-oswald print:text-3xl'>
           Experience
         </h1>
-        <div>
-          <a
+        <Entry
+          organization='Jackson Marketing'
+          title='Frontend Web Developer'
+          duration='March 2019 – Current'
             href='https://jacksonmg.com'
-            target='_blank'
-            className='inline-flex items-center gap-2 text-2xl transition hover:text-blue-500 print:text-lg'
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              height='24px'
-              viewBox='0 0 24 24'
-              width='24px'
-              className='fill-current rotate-[-45deg] print:hidden'
-            >
-              <path d='M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z' />
-            </svg>
-            Jackson Marketing
-          </a>
-          <p className='leading-snug opacity-50'>
-            Front End Web Developer <span className='mx-1'>•</span> March 2019 –
-            Current
-          </p>
-        </div>
+        />
       </section>
 
       {/* Education */}
@@ -89,28 +74,12 @@ export default function Home() {
         <h1 className='text-5xl uppercase font-oswald print:text-3xl'>
           Education
         </h1>
-        <div>
-          <a
+        <Entry
+          organization='Clemson University'
+          title='B.S. Mathematics Teaching'
+          duration='2014 – 2018'
             href='https://www.clemson.edu'
-            target='_blank'
-            className='inline-flex items-center gap-2 text-2xl transition hover:text-blue-500 print:text-lg'
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              height='24px'
-              viewBox='0 0 24 24'
-              width='24px'
-              className='fill-current rotate-[-45deg] print:hidden'
-            >
-              <path d='M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z' />
-            </svg>
-            Clemson University
-          </a>
-          <p className='leading-snug opacity-50'>
-            B.S. Mathematics Teaching <span className='mx-1'>•</span> 2014 –
-            2018
-          </p>
-        </div>
+        />
       </section>
 
       {/* Skills */}
