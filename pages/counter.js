@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
-export default function Videos() {
+export default function Counter() {
   return (
     <>
       <Head>
-        <title>Videos - Caleb Runion</title>
+        <title>Counter - Caleb Runion</title>
       </Head>
       <h1 className='text-5xl text-center uppercase font-oswald print:text-3xl'>
-        Videos
+        Counter
       </h1>
     </>
   )

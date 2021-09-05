@@ -7,7 +7,7 @@ const Nav = () => {
       <span className='mx-3'>•</span>
       <Link href='/weather'>Weather</Link>
       <span className='mx-3'>•</span>
-      <Link href='/videos'>Videos</Link>
+      <Link href='/counter'>Counter</Link>
     </nav>
   )
 }
