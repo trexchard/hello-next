@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Head from 'next/head'
+import { store } from '../app/store'
+import { Provider } from 'react-redux'
 
 function App({ Component, pageProps }) {
   return (
@@ -91,7 +93,9 @@ function App({ Component, pageProps }) {
         <Header />
         <main className='flex-1 w-full px-6 pt-8 pb-16 bg-gray-100 dark:bg-gray-900 md:p-12 md:pb-16'>
           <div className='max-w-5xl mx-auto'>
-            <Component {...pageProps} />
+            <Provider store={store}>
+              <Component {...pageProps} />
+            </Provider>
           </div>
         </main>
         <Footer />
