@@ -79,16 +79,16 @@ export default function Home() {
 
       {/* Contact Info */}
       <section className='flex flex-wrap justify-around mt-4'>
-        <ContactLink content='864.386.3546' label='tel' href='tel:8643863546' />
+        <ContactLink content='864.386.3546' label='tel' url='tel:8643863546' />
         <ContactLink
           content='calebrunion@icloud.com'
           label='email'
-          href='mailto:calebrunion@icloud.com'
+          url='mailto:calebrunion@icloud.com'
         />
         <ContactLink
           content='Greenville, SC'
           label='location'
-          href='https://www.google.com/maps/place/Greenville,+SC/@34.8177151,-82.348231,11z/data=!4m5!3m4!1s0x88578f6662fa1105:0xd8aa9d77bf257696!8m2!3d34.8526176!4d-82.3940104?hl=en'
+          url='https://www.google.com/maps/place/Greenville,+SC/@34.8177151,-82.348231,11z/data=!4m5!3m4!1s0x88578f6662fa1105:0xd8aa9d77bf257696!8m2!3d34.8526176!4d-82.3940104?hl=en'
         />
       </section>
 
@@ -101,7 +101,7 @@ export default function Home() {
           organization='Jackson Marketing'
           title='Frontend Web Developer'
           duration='March 2019 – Current'
-          href='https://jacksonmg.com'
+          url='https://jacksonmg.com'
         />
       </section>
 
@@ -114,7 +114,7 @@ export default function Home() {
           organization='Clemson University'
           title='B.S. Mathematics Teaching'
           duration='2014 – 2018'
-          href='https://www.clemson.edu'
+          url='https://www.clemson.edu'
         />
       </section>
 
