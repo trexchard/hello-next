@@ -23,9 +23,9 @@ export default function Weather({ weather }) {
       <em className='mt-6 text-7xl'>{weather.current.temp_f} ºF</em>
       <p>
         It's
-        <strong className='lowercase'>{weather.current.condition.text}</strong>
+        <strong className='lowercase mx-1.5'>{weather.current.condition.text}</strong>
         in
-        <i>
+        <i className='ml-1.5'>
           {weather.location.name}, {weather.location.country}
         </i>
       </p>

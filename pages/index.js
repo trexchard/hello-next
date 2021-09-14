@@ -52,28 +52,28 @@ export default function Home() {
         like
         <a
           href='https://tailwindcss.com'
-          className='ml-1 text-blue-500 hover:underline'
+          className='ml-1 text-blue-400 inline-flex hover:underline'
         >
           tailwindcss
         </a>
         ,
         <a
           href='https://alpinejs.dev'
-          className='ml-1 text-blue-500 hover:underline'
+          className='mx-1 text-blue-400 inline-flex hover:underline'
         >
           Alpine.js
         </a>
         and
         <a
           href='https://www.docker.com/'
-          className='ml-1 text-blue-500 hover:underline'
+          className='ml-1 text-blue-400 inline-flex hover:underline'
         >
           Docker
         </a>
         .
-        <i className='ml-1 opacity-70'>
-          You'll&nbsp;like me better when I'm caffeinated.
-        </i>{' '}
+        <i className='mx-1 opacity-70'>
+          You'll&nbsp;like me better when I'm caffeinated
+        </i>
         ☕
       </p>
 
