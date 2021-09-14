@@ -91,7 +91,7 @@ function App({ Component, pageProps }) {
       </Head>
       <body className='flex flex-col min-h-screen text-gray-900 bg-white dark:text-gray-200 dark:bg-gray-700'>
         <Header />
-        <main className='flex-1 w-full px-6 pt-8 pb-16 bg-gray-100 dark:bg-gray-900 md:p-12 md:pb-16'>
+        <main className='flex-1 flex items-center w-full px-6 pt-8 pb-16 bg-gray-100 dark:bg-gray-900 md:p-12 md:pb-16'>
           <div className='max-w-5xl mx-auto'>
             <Provider store={store}>
               <Component {...pageProps} />
