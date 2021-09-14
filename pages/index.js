@@ -52,6 +52,7 @@ export default function Home() {
         like
         <a
           href='https://tailwindcss.com'
+          target='_blank'
           className='ml-1 text-blue-400 inline-flex hover:underline'
         >
           tailwindcss
@@ -59,6 +60,7 @@ export default function Home() {
         ,
         <a
           href='https://alpinejs.dev'
+          target='_blank'
           className='mx-1 text-blue-400 inline-flex hover:underline'
         >
           Alpine.js
@@ -66,6 +68,7 @@ export default function Home() {
         and
         <a
           href='https://www.docker.com/'
+          target='_blank'
           className='ml-1 text-blue-400 inline-flex hover:underline'
         >
           Docker
