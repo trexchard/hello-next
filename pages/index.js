@@ -2,6 +2,7 @@ import Head from 'next/head'
 import ContactLink from '../components/ContactLink'
 import Entry from '../components/Entry'
 
+
 const skills = [
   'HTML5',
   'CSS',
@@ -34,8 +35,9 @@ const skills = [
   'nginx',
   'Linux',
   'Adobe Animate',
-  'Banner Ad Production',
+  'Banner Ad Production'
 ]
+
 
 export default function Home() {
   return (

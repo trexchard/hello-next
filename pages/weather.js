@@ -1,3 +1,6 @@
+import Head from 'next/head'
+
+
 export const getStaticProps = async () => {
   const res = await fetch(
     'https://api.weatherapi.com/v1/current.json?key=641a09f76e4e4dbcb2b14519210509&q=London&aqi=no'
@@ -9,7 +12,6 @@ export const getStaticProps = async () => {
   }
 }
 
-import Head from 'next/head'
 
 export default function Weather({ weather }) {
   return (
@@ -23,7 +25,9 @@ export default function Weather({ weather }) {
       <em className='mt-6 text-7xl'>{weather.current.temp_f} ºF</em>
       <p>
         It's
-        <strong className='lowercase mx-1.5'>{weather.current.condition.text}</strong>
+        <strong className='lowercase mx-1.5'>
+          {weather.current.condition.text}
+        </strong>
         in
         <i className='ml-1.5'>
           {weather.location.name}, {weather.location.country}
