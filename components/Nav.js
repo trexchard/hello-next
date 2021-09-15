@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 const navLinks = [
   { label: 'Home', route: '/' },
@@ -9,6 +10,7 @@ const navLinks = [
 
 const Nav = () => {
   const [open, setOpen] = useState(false)
+  const router = useRouter()
 
   return (
     <>
@@ -27,7 +29,15 @@ const Nav = () => {
       >
         {navLinks.map((item, index) => (
           <Link key={index} href={item.route}>
-            <a>{item.label}</a>
+            <a
+              className={`rounded-md transition p-2 px-3  ${
+                router.pathname === item.route
+                  ? 'text-blue-400'
+                  : 'hover:bg-purple-300/10'
+              }`}
+            >
+              {item.label}
+            </a>
           </Link>
         ))}
       </nav>
