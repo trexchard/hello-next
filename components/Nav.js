@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
+const navLinks = [
+  { label: 'Home', route: '/' },
+  { label: 'Weather', route: '/weather' },
+  { label: 'Counter', route: '/counter' }
+]
+
 const Nav = () => {
   const [open, setOpen] = useState(false)
 
@@ -19,11 +25,11 @@ const Nav = () => {
           open ? '' : 'opacity-0 pointer-events-none'
         } p-3 mx-auto overflow-x-auto transition text-center sm:order-none sm:w-auto`}
       >
-        <Link href='/'>Home</Link>
-        <span className='mx-3'>•</span>
-        <Link href='/weather'>Weather</Link>
-        <span className='mx-3'>•</span>
-        <Link href='/counter'>Counter</Link>
+        {navLinks.map((item, index) => (
+          <Link key={index} href={item.route}>
+            <a>{item.label}</a>
+          </Link>
+        ))}
       </nav>
     </>
   )
