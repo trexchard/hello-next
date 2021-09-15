@@ -14,7 +14,11 @@ const Nav = () => {
 
   return (
     <>
-      <div className='absolute inset-x-0 flex justify-center -mt-12'>
+      <div
+        className={`absolute inset-x-0 flex justify-center transition ${
+          open && '-translate-y-full'
+        }`}
+      >
         <button
           onClick={() => setOpen(!open)}
           className={`shadow-md rounded-lg p-2 select-none transition backdrop-blur-md bg-purple-200 bg-opacity-20 hover:bg-opacity-30`}
