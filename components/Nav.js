@@ -19,7 +19,7 @@ const Nav = () => {
   return (
     <>
       <div
-        className={`absolute inset-x-0 flex justify-center transition ${
+        className={`absolute inset-x-0 flex justify-center transition z-[-1] ${
           open && '-translate-y-full'
         }`}
       >
