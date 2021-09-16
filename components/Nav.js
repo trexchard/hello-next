@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 const navLinks = [
@@ -11,6 +11,10 @@ const navLinks = [
 const Nav = () => {
   const [open, setOpen] = useState(false)
   const router = useRouter()
+
+  useEffect(() => {
+    document.title = open ? 'Nav: open' : 'Nav: closed'
+  })
 
   return (
     <>
