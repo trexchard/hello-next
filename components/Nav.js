@@ -14,7 +14,7 @@ const Nav = () => {
 
   useEffect(() => {
     document.title = open ? 'Nav: open' : 'Nav: closed'
-  })
+  }, [open])
 
   return (
     <>
