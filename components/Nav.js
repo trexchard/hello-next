@@ -27,7 +27,7 @@ const Nav = () => {
           onClick={() => setOpen(!open)}
           className={`shadow-md rounded-lg p-2 select-none transition backdrop-blur-md bg-purple-200 bg-opacity-20 hover:bg-opacity-30`}
         >
-          {open ? 'hide' : 'show'} nav
+          {open ? 'close' : 'open'} nav
         </button>
       </div>
       <nav
