@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Anchor from '../components/Anchor'
 import ContactLink from '../components/ContactLink'
 import Entry from '../components/Entry'
 
@@ -51,34 +52,12 @@ export default function Home() {
         Detail-oriented software engineer, but mostly a creative problem-solver
         that's fast-paced and eager to learn. 2.5 years of industry experience
         building scalable front end web content. Builds with modern technologies
-        like
-        <a
-          href='https://tailwindcss.com'
-          target='_blank'
-          className='ml-1 text-blue-400 inline-flex hover:underline'
-        >
-          tailwindcss
-        </a>
-        ,
-        <a
-          href='https://alpinejs.dev'
-          target='_blank'
-          className='mx-1 text-blue-400 inline-flex hover:underline'
-        >
-          Alpine.js
-        </a>
-        and
-        <a
-          href='https://www.docker.com/'
-          target='_blank'
-          className='ml-1 text-blue-400 inline-flex hover:underline'
-        >
-          Docker
-        </a>
-        .
-        <i className='mx-1 opacity-70'>
+        like <Anchor href='https://tailwindcss.com'>tailwindcss</Anchor>,{' '}
+        <Anchor href='https://alpinejs.dev'>Alpine.js</Anchor> and{' '}
+        <Anchor href='https://nextjs.org'>NEXT.js</Anchor>.{' '}
+        <i className='opacity-70'>
           You'll&nbsp;like me better when I'm caffeinated
-        </i>
+        </i>{' '}
         ☕
       </p>
 
