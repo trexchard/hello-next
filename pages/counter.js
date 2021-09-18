@@ -34,7 +34,9 @@ export default function Counter() {
             />
           </svg>
         </button>
-        <em className='inline-flex select-all text-7xl w-24 justify-center'>{count}</em>
+        <em className='inline-flex justify-center w-24 select-all text-7xl'>
+          {count}
+        </em>
         <button
           aria-label='Increment value'
           onClick={() => dispatch(increment())}

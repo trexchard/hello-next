@@ -3,7 +3,6 @@ import Anchor from '../components/Anchor'
 import ContactLink from '../components/ContactLink'
 import Entry from '../components/Entry'
 
-
 const skills = [
   'HTML5',
   'CSS',
@@ -38,7 +37,6 @@ const skills = [
   'Adobe Animate',
   'Banner Ad Production'
 ]
-
 
 export default function Home() {
   return (
