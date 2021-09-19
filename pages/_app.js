@@ -9,7 +9,6 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <html lang='en-US' />
         <title>Caleb Runion</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
