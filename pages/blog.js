@@ -6,14 +6,22 @@ const baseURL = 'https://jsonplaceholder.typicode.com/posts'
 
 export default function Blog() {
   const [posts, setPosts] = useState(null)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPosts(response.data)
-    })
+    axios
+      .get(baseURL)
+      .then((response) => {
+        setPosts(response.data)
+      })
+      .catch((error) => {
+        setError(error)
+      })
   })
 
+  if (error) return `Error: ${error.message}`
   if (!posts) return null
+
   return (
     <>
       <Head>
