@@ -2,18 +2,18 @@ import Head from 'next/head'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-const baseURL = 'https://jsonplaceholder.typicode.com/posts/1'
+const baseURL = 'https://jsonplaceholder.typicode.com/posts'
 
 export default function Blog() {
-  const [post, setPost] = useState(null)
+  const [posts, setPosts] = useState(null)
 
   useEffect(() => {
     axios.get(baseURL).then((response) => {
-      setPost(response.data)
+      setPosts(response.data)
     })
   })
 
-  if (!post) return null
+  if (!posts) return null
   return (
     <>
       <Head>
