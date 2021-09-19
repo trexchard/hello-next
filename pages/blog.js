@@ -19,13 +19,14 @@ export default function Blog() {
       <Head>
         <title>Blog - Caleb Runion</title>
       </Head>
-      <div className='grid gap-4'>
+        {posts.map((post) => (
         <div className='p-6 bg-gray-400/10 rounded-xl'>
           <h1 className='text-3xl uppercase'>{post.title}</h1>
           <p className='mt-4'>
             {post.body} {post.body} {post.body}
           </p>
         </div>
+        ))}
       </div>
     </>
   )
