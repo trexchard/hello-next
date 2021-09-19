@@ -9,6 +9,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <html lang='en-US' />
         <title>Caleb Runion</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -85,7 +86,7 @@ function App({ Component, pageProps }) {
           sizes='16x16'
           href='/favicon-16x16.png'
         />
-        <link rel='manifest' href='/manifest.json' />
+        <link rel='manifest' href='/manifest.webmanifest' />
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
       </Head>

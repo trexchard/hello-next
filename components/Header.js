@@ -6,6 +6,7 @@ const Header = () => (
       <div className='inline-grid grid-cols-[auto,1fr] gap-x-4 cursor-pointer'>
         <img
           src='/profile.jpg'
+          alt='Caleb Runion profile'
           className='self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md print:shadow-none'
         />
         <h1 className='text-4xl uppercase font-oswald'>Caleb Runion</h1>

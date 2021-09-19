@@ -5,6 +5,7 @@ const Footer = () => (
     <a
       href='https://www.linkedin.com/in/calebrunion/'
       target='_blank'
+      title='LinkedIn'
       className='p-4 transition hover:text-blue-500'
     >
       <svg
@@ -21,6 +22,7 @@ const Footer = () => (
     <a
       href='https://github.com/calebrunion'
       target='_blank'
+      title='GitHub'
       className='p-4 mr-auto transition hover:text-blue-500'
     >
       <svg
