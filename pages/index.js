@@ -107,8 +107,11 @@ export default function Home() {
         </h1>
 
         <div className='flex flex-wrap items-center gap-1 print:text-xs'>
-          {skills.map((skill) => (
-            <div className='px-3 py-2 font-mono rounded-md bg-gray-400/20'>
+          {skills.map((skill, id) => (
+            <div
+              key={id}
+              className='px-3 py-2 font-mono rounded-md bg-gray-400/20'
+            >
               {skill}
             </div>
           ))}

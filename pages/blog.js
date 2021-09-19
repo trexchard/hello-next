@@ -21,7 +21,7 @@ export default function Blog() {
       </Head>
       <div className='grid max-w-4xl gap-4 mx-auto'>
         {posts.map((post) => (
-          <div className='p-6 bg-gray-400/10 rounded-xl'>
+          <div key={post.id} className='p-6 bg-gray-400/10 rounded-xl'>
             <h2 className='text-3xl uppercase'>{post.title}</h2>
             <p className='mt-2'>
               {post.body} {post.body} {post.body}

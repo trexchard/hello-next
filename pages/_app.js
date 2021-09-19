@@ -89,7 +89,7 @@ function App({ Component, pageProps }) {
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
       </Head>
-      <body className='flex flex-col min-h-screen text-gray-900 bg-white dark:text-gray-200 dark:bg-gray-700'>
+      <div className='flex flex-col min-h-screen'>
         <Header />
         <main className='flex items-center flex-1 w-full px-6 pt-8 pb-16 bg-gray-100 dark:bg-gray-900 md:p-12 md:pb-16'>
           <div className='max-w-5xl mx-auto'>
@@ -99,7 +99,7 @@ function App({ Component, pageProps }) {
           </div>
         </main>
         <Footer />
-      </body>
+      </div>
     </>
   )
 }
