@@ -4,73 +4,71 @@ import ContactLink from '../components/ContactLink'
 import Entry from '../components/Entry'
 
 const skills = [
-  'HTML5',
-  'CSS',
-  'tailwindcss',
-  'SCSS',
-  'ES6 Javascript',
-  'Alpine.js',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'NEXT.js',
   'Node.js',
-  'Docker',
-  'Gulp',
-  'Bash',
-  'Eblast Production',
-  'jQuery',
-  'Responsive Design',
-  'ExpressionEngine',
-  'Laravel',
-  'PHP',
   'Python',
+  'Rust',
+  'Docker',
+  'Kubernetes',
+  'PostgreSQL',
+  'MongoDB',
+  'GraphQL',
+  'tailwindcss',
   'Git',
   'GitHub',
-  'Netlify',
-  'Deployment',
-  'Hosting',
-  'NEXT.js',
-  'React',
-  'Cross-browser Compatibility',
-  'UX Design',
-  'Adobe Photoshop',
-  'Adobe Illustrator',
-  'nginx',
+  'AWS',
   'Linux',
-  'Adobe Animate',
-  'Banner Ad Production'
+  'Mithril Mining',
+  'Axe Maintenance',
+  'Cave Navigation',
+  'Rune Encryption',
+  'Stonework Architecture',
+  'Ale-Driven Development',
+  'Grudge-Based Debugging',
+  'Beard Grooming',
 ]
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - Caleb Runion</title>
+        <title>Home - Gimli, son of Glóin</title>
       </Head>
 
       {/* Intro */}
       <p>
-        Detail-oriented software engineer, but mostly a creative problem-solver
-        that's fast-paced and eager to learn. 2.5 years of industry experience
-        building scalable front end web content. Builds with modern technologies
-        like <Anchor href='https://tailwindcss.com'>tailwindcss</Anchor>,{' '}
-        <Anchor href='https://alpinejs.dev'>Alpine.js</Anchor> and{' '}
+        Battle-hardened full-stack engineer with an eye for detail sharper than a
+        dwarven blade. Over 200 years of experience building scalable
+        applications deep in the mines and across Middle-earth. Builds with
+        modern technologies like{' '}
+        <Anchor href='https://tailwindcss.com'>tailwindcss</Anchor>,{' '}
+        <Anchor href='https://reactjs.org'>React</Anchor> and{' '}
         <Anchor href='https://nextjs.org'>NEXT.js</Anchor>.{' '}
         <i className='opacity-70'>
-          You'll&nbsp;like me better when I'm caffeinated
+          And my axe! ...I mean, and my keyboard!
         </i>{' '}
-        ☕
+        ⚒️
       </p>
 
       {/* Contact Info */}
       <section className='flex flex-wrap justify-around mt-4'>
-        <ContactLink content='864.386.3546' label='tel' url='tel:8643863546' />
         <ContactLink
-          content='calebrunion@icloud.com'
-          label='email'
-          url='mailto:calebrunion@icloud.com'
+          content='+1 (555) AXE-MINE'
+          label='tel'
+          url='tel:5552963463'
         />
         <ContactLink
-          content='Greenville, SC'
+          content='gimli@erebor.dev'
+          label='email'
+          url='mailto:gimli@erebor.dev'
+        />
+        <ContactLink
+          content='Erebor, Lonely Mountain'
           label='location'
-          url='https://www.google.com/maps/place/Greenville,+SC/@34.8177151,-82.348231,11z/data=!4m5!3m4!1s0x88578f6662fa1105:0xd8aa9d77bf257696!8m2!3d34.8526176!4d-82.3940104?hl=en'
+          url='https://www.google.com/maps'
         />
       </section>
 
@@ -80,10 +78,22 @@ export default function Home() {
           Experience
         </h1>
         <Entry
-          organization='Jackson Marketing'
-          title='Frontend Web Developer'
-          duration='March 2019 – Current'
-          url='https://jacksonmg.com'
+          organization='Mithril Stack Technologies'
+          title='Senior Full-Stack Engineer'
+          duration='Third Age 3019 – Current'
+          url='https://github.com'
+        />
+        <Entry
+          organization='Erebor Cloud Services'
+          title='Infrastructure & DevOps Lead'
+          duration='Third Age 2941 – 3019'
+          url='https://github.com'
+        />
+        <Entry
+          organization='Khazad-dûm Deep Systems'
+          title='Junior Backend Developer (Intern)'
+          duration='Third Age 2800 – 2941'
+          url='https://github.com'
         />
       </section>
 
@@ -93,10 +103,16 @@ export default function Home() {
           Education
         </h1>
         <Entry
-          organization='Clemson University'
-          title='B.S. Mathematics Teaching'
-          duration='2014 – 2018'
-          url='https://www.clemson.edu'
+          organization='The University of Erebor'
+          title='B.S. Computer Science & Applied Mithril Engineering'
+          duration='Third Age 2763 – 2790'
+          url='https://github.com'
+        />
+        <Entry
+          organization='Rivendell Online Academy'
+          title='Certificate in Elvish-Dwarvish Cross-Cultural API Design'
+          duration='Third Age 3020'
+          url='https://github.com'
         />
       </section>
 

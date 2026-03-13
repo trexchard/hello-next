@@ -17,7 +17,7 @@ export default function Weather({ weather }) {
   return (
     <div className='grid gap-4 text-center'>
       <Head>
-        <title>Weather - Caleb Runion</title>
+        <title>Weather - Gimli, son of Glóin</title>
       </Head>
       <h1 className='text-5xl text-center uppercase font-oswald print:text-3xl'>
         Weather API
