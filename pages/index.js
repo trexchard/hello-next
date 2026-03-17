@@ -39,7 +39,7 @@ export default function Home() {
       </Head>
 
       {/* Intro */}
-      <p>
+      <p className='text-base leading-relaxed' style={{ color: 'rgba(224, 232, 255, 0.8)' }}>
         Battle-hardened full-stack engineer with an eye for detail sharper than a
         dwarven blade. Over 200 years of experience building scalable
         applications deep in the mines and across Middle-earth. Builds with
@@ -47,14 +47,14 @@ export default function Home() {
         <Anchor href='https://tailwindcss.com'>tailwindcss</Anchor>,{' '}
         <Anchor href='https://reactjs.org'>React</Anchor> and{' '}
         <Anchor href='https://nextjs.org'>NEXT.js</Anchor>.{' '}
-        <i className='opacity-70'>
+        <i style={{ color: 'rgba(224, 232, 255, 0.5)' }}>
           And my axe! ...I mean, and my keyboard!
         </i>{' '}
         ⚒️
       </p>
 
       {/* Contact Info */}
-      <section className='flex flex-wrap justify-around mt-4'>
+      <section className='flex flex-wrap justify-around mt-6 gap-2'>
         <ContactLink
           content='+1 (555) AXE-MINE'
           label='tel'
@@ -72,9 +72,11 @@ export default function Home() {
         />
       </section>
 
+      <hr className='cyber-divider mt-10' />
+
       {/* Experience */}
-      <section className='grid gap-6 mt-12'>
-        <h1 className='text-5xl uppercase font-oswald print:text-3xl'>
+      <section className='grid gap-5 mt-10'>
+        <h1 className='text-5xl heading-retro print:text-3xl'>
           Experience
         </h1>
         <Entry
@@ -97,9 +99,11 @@ export default function Home() {
         />
       </section>
 
+      <hr className='cyber-divider mt-8' />
+
       {/* Education */}
-      <section className='grid gap-6 mt-12'>
-        <h1 className='text-5xl uppercase font-oswald print:text-3xl'>
+      <section className='grid gap-5 mt-8'>
+        <h1 className='text-5xl heading-retro print:text-3xl'>
           Education
         </h1>
         <Entry
@@ -116,17 +120,19 @@ export default function Home() {
         />
       </section>
 
+      <hr className='cyber-divider mt-8' />
+
       {/* Skills */}
-      <section className='grid gap-6 mt-12'>
-        <h1 className='text-5xl uppercase font-oswald print:text-3xl'>
+      <section className='grid gap-5 mt-8'>
+        <h1 className='text-5xl heading-retro print:text-3xl'>
           Skills
         </h1>
 
-        <div className='flex flex-wrap items-center gap-1 print:text-xs'>
+        <div className='flex flex-wrap items-center gap-2 print:text-xs'>
           {skills.map((skill, id) => (
             <div
               key={id}
-              className='px-3 py-2 font-mono rounded-md bg-gray-400/20'
+              className='px-3 py-2 font-mono rounded skill-badge text-sm'
             >
               {skill}
             </div>
