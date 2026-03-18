@@ -1,9 +1,33 @@
-const Entry = ({organization, title, duration, url }) => (
-  <div>
+const Entry = ({ organization, title, duration, url }) => (
+  <div
+    className='p-4 rounded transition'
+    style={{
+      borderLeft: '2px solid rgba(0, 255, 255, 0.3)',
+      paddingLeft: '1.25rem',
+      transition: 'border-color 0.2s ease',
+    }}
+    onMouseEnter={e => {
+      e.currentTarget.style.borderLeftColor = '#00ffff'
+      e.currentTarget.style.boxShadow = '-4px 0 12px rgba(0, 255, 255, 0.15)'
+    }}
+    onMouseLeave={e => {
+      e.currentTarget.style.borderLeftColor = 'rgba(0, 255, 255, 0.3)'
+      e.currentTarget.style.boxShadow = 'none'
+    }}
+  >
     <a
       href={url}
       target='_blank'
-      className='inline-flex items-center gap-2 text-2xl transition hover:text-blue-500 print:text-lg'
+      className='inline-flex items-center gap-2 text-2xl transition print:text-lg font-rajdhani'
+      style={{ color: 'rgba(224, 232, 255, 0.9)' }}
+      onMouseEnter={e => {
+        e.currentTarget.style.color = '#00ffff'
+        e.currentTarget.style.textShadow = '0 0 6px #00ffff'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.color = 'rgba(224, 232, 255, 0.9)'
+        e.currentTarget.style.textShadow = 'none'
+      }}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -16,7 +40,7 @@ const Entry = ({organization, title, duration, url }) => (
       </svg>
       {organization}
     </a>
-    <p className='leading-snug opacity-50'>
+    <p className='leading-snug mt-1 font-mono text-sm' style={{ color: 'rgba(224, 232, 255, 0.4)' }}>
       {title}, {duration}
     </p>
   </div>

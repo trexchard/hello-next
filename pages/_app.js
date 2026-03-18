@@ -13,7 +13,7 @@ function App({ Component, pageProps }) {
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
         <link
-          href='https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Space+Grotesk:wght@300&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Oswald:wght@300;400&family=Space+Grotesk:wght@300;400;500&family=Rajdhani:wght@400;500;600&display=swap'
           rel='stylesheet'
         />
         <link
@@ -86,13 +86,14 @@ function App({ Component, pageProps }) {
           href='/favicon-16x16.png'
         />
         <link rel='manifest' href='/manifest.webmanifest' />
-        <meta name='msapplication-TileColor' content='#ffffff' />
+        <meta name='theme-color' content='#0a0a0a' />
+        <meta name='msapplication-TileColor' content='#0a0a0a' />
         <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
       </Head>
       <div className='flex flex-col min-h-screen'>
         <Header />
-        <main className='flex items-center flex-1 w-full px-6 pt-8 pb-16 bg-gray-100 dark:bg-gray-900 md:p-12 md:pb-16'>
-          <div className='max-w-5xl mx-auto'>
+        <main className='flex items-start flex-1 w-full px-6 pt-8 pb-16 md:p-12 md:pb-16' style={{background: 'transparent'}}>
+          <div className='max-w-5xl mx-auto w-full fade-in-up'>
             <Provider store={store}>
               <Component {...pageProps} />
             </Provider>

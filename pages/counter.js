@@ -12,12 +12,12 @@ export default function Counter() {
       <Head>
         <title>Counter - Gimli, son of Glóin</title>
       </Head>
-      <h1 className='text-5xl uppercase font-oswald print:text-3xl'>Counter</h1>
-      <div className='inline-flex items-center mt-8 '>
+      <h1 className='text-5xl heading-retro print:text-3xl'>Counter</h1>
+      <div className='inline-flex items-center mt-12 gap-6'>
         <button
           aria-label='Decrement value'
           onClick={() => dispatch(decrement())}
-          className='inline-flex items-center justify-center w-12 h-12 mr-5 text-3xl transition bg-gray-400 rounded-full bg-opacity-10 hover:bg-opacity-20'
+          className='inline-flex items-center justify-center w-14 h-14 rounded neon-btn-magenta'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -34,13 +34,21 @@ export default function Counter() {
             />
           </svg>
         </button>
-        <em className='inline-flex justify-center w-24 select-all text-7xl'>
+
+        <em
+          className='inline-flex justify-center w-28 select-all text-7xl font-orbitron'
+          style={{
+            color: '#00ffff',
+            textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px rgba(0,255,255,0.5)',
+          }}
+        >
           {count}
         </em>
+
         <button
           aria-label='Increment value'
           onClick={() => dispatch(increment())}
-          className='inline-flex items-center justify-center w-12 h-12 ml-8 text-3xl transition bg-gray-400 rounded-full bg-opacity-10 hover:bg-opacity-20'
+          className='inline-flex items-center justify-center w-14 h-14 rounded neon-btn'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'

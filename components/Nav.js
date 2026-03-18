@@ -26,9 +26,19 @@ const Nav = () => {
       >
         <button
           onClick={() => setOpen(!open)}
-          className={`shadow-md rounded-lg p-2 select-none transition backdrop-blur-md bg-purple-200 bg-opacity-20 hover:bg-opacity-30`}
+          className='rounded p-2 select-none transition text-xs uppercase tracking-widest font-orbitron'
+          style={{
+            background: 'rgba(10, 10, 10, 0.85)',
+            backdropFilter: 'blur(8px)',
+            border: '1px solid rgba(0, 255, 255, 0.35)',
+            color: open ? '#00ffff' : 'rgba(0, 255, 255, 0.6)',
+            boxShadow: open
+              ? '0 0 10px rgba(0,255,255,0.3), 0 0 20px rgba(0,255,255,0.1)'
+              : '0 0 5px rgba(0,255,255,0.1)',
+            textShadow: open ? '0 0 6px #00ffff' : 'none',
+          }}
         >
-          {open ? 'close' : 'open'} nav
+          {open ? '[ close nav ]' : '[ open nav ]'}
         </button>
       </div>
       <nav
@@ -36,19 +46,29 @@ const Nav = () => {
           open ? '' : 'opacity-0 pointer-events-none'
         } p-3 mx-auto overflow-x-auto transition text-center sm:order-none sm:w-auto`}
       >
-        {navLinks.map((item, index) => (
-          <Link key={index} href={item.route}>
-            <a
-              className={`rounded-md transition p-2 px-3  ${
-                router.pathname === item.route
-                  ? 'text-blue-400'
-                  : 'hover:bg-purple-300/10'
-              }`}
-            >
-              {item.label}
-            </a>
-          </Link>
-        ))}
+        {navLinks.map((item, index) => {
+          const isActive = router.pathname === item.route
+          return (
+            <Link key={index} href={item.route}>
+              <a
+                className='rounded p-2 px-4 mx-1 text-sm uppercase tracking-widest font-orbitron transition'
+                style={{
+                  color: isActive ? '#00ffff' : 'rgba(0, 255, 255, 0.55)',
+                  textShadow: isActive ? '0 0 6px #00ffff, 0 0 12px #00ffff' : 'none',
+                  border: isActive
+                    ? '1px solid rgba(0, 255, 255, 0.5)'
+                    : '1px solid transparent',
+                  boxShadow: isActive
+                    ? '0 0 8px rgba(0,255,255,0.2), inset 0 0 8px rgba(0,255,255,0.05)'
+                    : 'none',
+                  background: isActive ? 'rgba(0,255,255,0.05)' : 'transparent',
+                }}
+              >
+                {item.label}
+              </a>
+            </Link>
+          )
+        })}
       </nav>
     </>
   )

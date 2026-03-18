@@ -1,12 +1,29 @@
 import Nav from './Nav'
 
 const Footer = () => (
-  <footer className='sticky bottom-0 z-50 flex flex-wrap items-center justify-between px-3 pb-5 bg-white rounded-t-xl bg-white/70 dark:bg-gray-700/70 backdrop-blur-md sm:pb-0 print:shadow-none print:p-0 md:px-9 dark:bg-gray-700 print:hidden'>
+  <footer
+    className='sticky bottom-0 z-50 flex flex-wrap items-center justify-between px-3 pb-5 sm:pb-0 print:hidden md:px-9'
+    style={{
+      background: 'rgba(10, 10, 10, 0.9)',
+      backdropFilter: 'blur(12px)',
+      borderTop: '1px solid rgba(0, 255, 255, 0.2)',
+      boxShadow: '0 -2px 20px rgba(0, 255, 255, 0.08)',
+    }}
+  >
     <a
       href='https://www.linkedin.com/in/gimli-son-of-gloin/'
       target='_blank'
       title='LinkedIn'
-      className='p-4 transition hover:text-blue-500'
+      className='p-4 transition'
+      style={{ color: 'rgba(0, 255, 255, 0.6)' }}
+      onMouseEnter={e => {
+        e.currentTarget.style.color = '#00ffff'
+        e.currentTarget.style.filter = 'drop-shadow(0 0 6px #00ffff)'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.color = 'rgba(0, 255, 255, 0.6)'
+        e.currentTarget.style.filter = 'none'
+      }}
     >
       <svg
         width='34'
@@ -23,7 +40,16 @@ const Footer = () => (
       href='https://github.com/gimli-axedev'
       target='_blank'
       title='GitHub'
-      className='p-4 mr-auto transition hover:text-blue-500'
+      className='p-4 mr-auto transition'
+      style={{ color: 'rgba(0, 255, 255, 0.6)' }}
+      onMouseEnter={e => {
+        e.currentTarget.style.color = '#00ffff'
+        e.currentTarget.style.filter = 'drop-shadow(0 0 6px #00ffff)'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.color = 'rgba(0, 255, 255, 0.6)'
+        e.currentTarget.style.filter = 'none'
+      }}
     >
       <svg
         width='34'
@@ -44,7 +70,16 @@ const Footer = () => (
 
     <a
       href='#'
-      className='inline-flex items-center p-4 ml-auto -mr-2 text-xl uppercase transition font-oswald hover:text-blue-500 print:hidden'
+      className='inline-flex items-center p-4 ml-auto -mr-2 text-sm uppercase tracking-widest font-orbitron transition'
+      style={{ color: 'rgba(0, 255, 255, 0.6)' }}
+      onMouseEnter={e => {
+        e.currentTarget.style.color = '#00ffff'
+        e.currentTarget.style.textShadow = '0 0 6px #00ffff'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.color = 'rgba(0, 255, 255, 0.6)'
+        e.currentTarget.style.textShadow = 'none'
+      }}
     >
       Back to top
       <svg
