@@ -25,7 +25,7 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Blog - Caleb Runion</title>
+        <title>Blog - Gimli, son of Glóin</title>
       </Head>
       <div className='grid max-w-4xl gap-4 mx-auto'>
         {posts.map((post) => (

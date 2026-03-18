@@ -3,7 +3,7 @@ import Nav from './Nav'
 const Footer = () => (
   <footer className='sticky bottom-0 z-50 flex flex-wrap items-center justify-between px-3 pb-5 bg-white rounded-t-xl bg-white/70 dark:bg-gray-700/70 backdrop-blur-md sm:pb-0 print:shadow-none print:p-0 md:px-9 dark:bg-gray-700 print:hidden'>
     <a
-      href='https://www.linkedin.com/in/calebrunion/'
+      href='https://www.linkedin.com/in/gimli-son-of-gloin/'
       target='_blank'
       title='LinkedIn'
       className='p-4 transition hover:text-blue-500'
@@ -20,7 +20,7 @@ const Footer = () => (
       </svg>
     </a>
     <a
-      href='https://github.com/calebrunion'
+      href='https://github.com/gimli-axedev'
       target='_blank'
       title='GitHub'
       className='p-4 mr-auto transition hover:text-blue-500'

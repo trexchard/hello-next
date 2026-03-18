@@ -1,29 +1,38 @@
-# Next.js + Tailwind CSS Example
+# Gimli's Portfolio - A Demo Next.js Site
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+A fictional developer portfolio for **Gimli, son of Gloin** — the legendary dwarf warrior reimagined as a modern full-stack software engineer. Built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+This is a demo/parody project. All personal information is fictional and based on the Lord of the Rings character Gimli. No real contact information is used.
 
-## Preview
+## About
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+This portfolio showcases what Gimli's resume might look like if he traded his axe for a mechanical keyboard (well, mostly). It includes:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- A Gimli-themed bio and contact info
+- Work experience at dwarf-themed tech companies (Mithril Stack Technologies, Erebor Cloud Services, Khazad-dum Deep Systems)
+- Education from the University of Erebor and Rivendell Online Academy
+- A mix of real programming skills and dwarf-related expertise
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Getting Started
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+npm install
+npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Built With
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+
+## Note
+
+The profile image (`public/profile.jpg`) still contains the original placeholder image. Replace it with an appropriate Gimli-themed image for the full experience.
+
+## Credits
+
+Originally forked from [trexchard/hello-next](https://github.com/trexchard/hello-next). Modified for demo/entertainment purposes.

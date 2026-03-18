@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Caleb Runion</title>
+        <title>Gimli, son of Glóin</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
         <link

@@ -6,12 +6,12 @@ const Header = () => (
       <div className='inline-grid grid-cols-[auto,1fr] gap-x-4 cursor-pointer'>
         <img
           src='/profile.jpg'
-          alt='Caleb Runion profile'
+          alt='Gimli, son of Glóin profile'
           className='self-center object-cover w-16 h-16 row-span-2 rounded-md shadow-md print:shadow-none'
         />
-        <h1 className='text-4xl uppercase font-oswald'>Caleb Runion</h1>
+        <h1 className='text-4xl uppercase font-oswald'>Gimli, son of Glóin</h1>
         <h2 className='font-mono leading-tight opacity-80'>
-          front end web&nbsp;developer
+          full-stack engineer &amp; axe&nbsp;enthusiast
         </h2>
       </div>
     </Link>

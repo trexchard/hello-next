@@ -10,7 +10,7 @@ export default function Counter() {
   return (
     <div className='text-center select-none'>
       <Head>
-        <title>Counter - Caleb Runion</title>
+        <title>Counter - Gimli, son of Glóin</title>
       </Head>
       <h1 className='text-5xl uppercase font-oswald print:text-3xl'>Counter</h1>
       <div className='inline-flex items-center mt-8 '>
